@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <title>Holiday Challenges</title>
+    <meta name="description" content="Holiday Challenges Website">
+    <meta name="author" content="ShadyAlexCodes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+			function showHideDiv(ele) {
+				var srcElement = document.getElementById(ele);
+				if (srcElement != null) {
+					if (srcElement.style.display == "block") {
+						srcElement.style.display = 'none';
+					}
+					else {
+						srcElement.style.display = 'block';
+					}
+					return false;
+				}
+			}
+
+    $(document).ready(function(){
+        $(window).scroll(function() { // check if scroll event happened
+            if ($(document).scrollTop() > 900) { // check if user scrolled more than 50 from top of the browser window
+            $(".name").css("color", "#FF3562"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+            } else {
+            $(".name").css("color", "#efefef"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+            }
+        });
+    });
+    </script>
+
+</head>
+<body>
+
+<div class="container u-max-full-width">
+    <nav id="navbar" class>
+        <div class="wrapper">
+            <p class="name">
+             Shady<strong>Alex</strong>Codes
+            </p>
+        </div>
+    </nav>
+</div>
+<div class="header">
+    <div class="container u-max-full-width">
+        <div class="row u-max-full-width">
+            <div class="center column u-max-full-width">
+                    <h1>
+                        <div class="opaque-bg animated fadeInDown">
+                            <strong>Holiday Calendar</strong>
+                            <smallText style="text-transform: none;">
+                                <br>
+                                <span style="opacity: 0.2; font-size: 15px;">© 2019 ShadyAlexCodes<br>All rights reserved.</span>
+                            </smallText>
+                        </div>
+                    </h1>
+                </div>
+            </div>
+        </div>
+    <div class="paint-stroke"></div>
+</div>
+
+<section id="downArrow">
+    <a href="#content"><span></span><span></span><span></span></a>
+</section>
+<br>
+<br>
+<div id="treeContent">
+<section id="content">
+
+    <div class="title">
+        <p class="holidayFont">'Tis the season!</p>
+        <br>
+        <p class="holidayFont" style="font-size: 50px;">Come back daily!</p>
+            <p class="seperator">
+    </div>
+    <div class="container u-max-full-width">
+        <div class="row">
+            <div class="center column">
+                    <div style="text-align:center;">
+
+                            <span class="dot_completed">
+                                <a href="#day1">
+                                    <p class="dotnumber">
+                                    25
+                                    </p>
+                                </a>
+                            </span>
+                            <br>
+                            <br>
+                            <span class="dot_completed">
+                                <a href="#day2">
+                                    <p class="dotnumber">
+                                    8
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot_completed">
+                                <a href="#day3">
+                                    <p class="dotnumber">
+                                    22
+                                    </p>
+                                </a>
+                            </span>
+                            <br>
+                            <br>
+                            <span class="dot_completed">
+                                <a href="#day4">
+                                    <p class="dotnumber">
+                                    21
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot_completed">
+                                <a href="#day5">
+                                    <p class="dotnumber">
+                                    5
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot_completed">
+                                <a href="#day6">
+                                    <p class="dotnumber">
+                                    1
+                                    </p>
+                                </a>
+                            </span>
+                            <br>
+                            <br>
+                            <span class="dot_completed">
+                                <a href="#day7">
+                                    <p class="dotnumber">
+                                    7
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot_completed">
+                                <a href="#day8">
+                                    <p class="dotnumber">
+                                    24
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot_completed">
+                                <a href="#day9">
+                                    <p class="dotnumber">
+                                    16
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot_completed">
+                                <a href="#day10">
+                                    <p class="dotnumber">
+                                    10
+                                    </p>
+                                </a>
+                            </span>
+                            <br>
+                            <br>
+                            <span class="dot_completed">
+                                <a href="#day11">
+                                    <p class="dotnumber">
+                                    11
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    12
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    13
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    14
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    15
+                                    </p>
+                                </a>
+                            </span>
+                            <br>
+                            <br>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    16
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    17
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    18
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    19
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    20
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    21
+                                    </p>
+                                </a>
+                            </span>
+                            <br>
+                            <br>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    22
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    23
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    24
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    25
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    26
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                   27
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    28
+                                    </p>
+                                </a>
+                            </span>
+                            <br>
+                            <br>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    29
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    30
+                                    </p>
+                                </a>
+                            </span>
+                            <span class="dot">
+                                <a href="#locked">
+                                    <p class="dotnumber">
+                                    31
+                                    </p>
+                                </a>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>   
+        <br>
+        <br>
+        <!-- Standard buttons -->
+        <div class="container u-max-full-width">
+            <a class="button" onclick="showHideDiv('creationProcess');">View Creation Process</a>
+        </div>
+
+        <div id="creationProcess" style="display: none;">
+            <br>
+            <br>
+                <div class="container">
+                        <div class="row">
+                          <div class="one-half column value">
+                            <h2 class="value-multiplier">The Concept</h2>
+                            <p class="value-description">
+                                When the Holiday's come around families across the world are often purchasing Holiday Advent Calendars. 
+                            This project brings the calendar to you, and introduces holiday activities for all ages! From simple coding questions all the way to facts about computer science.</p>
+                          </div>
+                          <div class="one-half column value">
+                            <h2 class="value-multiplier">The Building Process</h2>
+                            <p class="value-description">          
+                                The inspiration for this idea came from a neighbor who had just bought one for themselves,
+                                and during that time I was looking at other projects such as <a href="https://www.homestoriesatoz.com/wp-content/uploads/2017/11/Christmas-Advent-Countdown-Ideas-Upcycled-Tin-Can-by-Pillar-Box-Blue.jpg" style="color: #495867; font-size: 15px; font-weight: bold; text-transform: none;">this one.</a>
+                                After much research, and feedback on the idea I began developing it.
+                                I wanted to create something cute, and fun to represent my questions.
+                            </p>
+                          </div>
+                        </div>
+                    <br>
+                    <div class="row">
+                            <div class="one-half column value">
+                              <h2 class="value-multiplier">The Dots</h2>
+                              <p class="value-description">
+                                    <span class="dot_example"></span>
+                                    <br>
+                                <div class="codeBlock">
+                                    < span class="dot"></ span>
+                                    <br>                                    
+                                    .dot {
+                                        <br>
+                                    height: 25px;
+                                    <br>
+                                    width: 25px;
+                                    <br>
+                                    background-color: #FF3562;
+                                    <br>
+                                    border-radius: 50%;
+                                    <br>
+                                    display: inline-block;
+                                    <br>
+                                    }
+                                </div>
+                            </p>
+                            </div>
+                            <div class="one-half column value">
+                              <h2 class="value-multiplier">The Tree</h2>
+                              <p class="value-description">
+                                After the creation of the dots, they were arranged into the shape of a tree.
+
+                                  <br>     
+                                  <br>        
+                                    <span class="dot_example"></span>
+                                    <br>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <br>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <br>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <br>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <br>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <br>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                                    <br>
+                                    <span class="dot_example"></span>
+                                    <span class="dot_example"></span>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                        <div class="container">
+                                <div class="row">
+                                  <div class="one-half column value">
+                                    <h2 class="value-multiplier">The Javascript</h2>
+                                    <p class="value-description">
+                                        <div class="codeBlock">
+                                                BEING REDONE
+                                        </div>
+                                        </p>
+                                    </div>
+                                  <div class="one-half column value">
+                                    <h2 class="value-multiplier">The Building Process</h2>
+                                    <p class="value-description">          
+                                        The inspiration for this idea came from a neighbor who had just bought one for themselves,
+                                        and during that time I was looking at other projects such as <a href="https://www.homestoriesatoz.com/wp-content/uploads/2017/11/Christmas-Advent-Countdown-Ideas-Upcycled-Tin-Can-by-Pillar-Box-Blue.jpg" style="color: #495867; font-size: 15px; font-weight: bold; text-transform: none;">this one.</a>
+                                        After much research, and feedback on the idea I began developing it.
+                                        I wanted to create something cute, and fun to represent my questions.
+                                    </p>
+                                  </div>
+                                </div>
+                    </div>
+    </div>
+
+
+</section>
+
+
+<extraSmallText>
+    <span class="github_button">
+         <img src="https://avatars0.githubusercontent.com/u/45239432?s=460&v=4"> 
+    </span>
+</extraSmallText>
+</body>
+
+</html>
