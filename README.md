@@ -6,18 +6,15 @@ Visit the [Wiki](http://github.com) for more information.
 
 ### Contribution
 This project was inspired by [Christmas Advent Ideas](https://www.homestoriesatoz.com/holiday-ideas/20-christmas-advent-calendar-ideas.html)
-A huge thanks to [@mm909](https://github.com/mm909), and [@quijas4101](https://github.com/quijas4101) for their help with the javascript.
-
-[Sweet Alert](https://sweetalert.js.org/) -- Find the really cool javascript alets here!
 
 [License](http://github.com)
 
 [Live Version](https://shadyalexcodes.com)
-
-# Notice
+ 
+![alt text](https://i.imgur.com/wsspgTi.png)
 
 
 # TODO
 
 ### General
- * Create a system that will defaultly release the numbers daily
+ * This is not a complete website, and will be updated periodically.
