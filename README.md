@@ -9,7 +9,7 @@ This project was inspired by [Christmas Advent Ideas](https://www.homestoriesato
 
 [License](http://github.com)
 
-[Live Version](https://shadyalexcodes.com)
+[Live Version](https://shadyalexcodes.com/Holiday-Challenges/)
  
 ![alt text](https://i.imgur.com/wsspgTi.png)
 

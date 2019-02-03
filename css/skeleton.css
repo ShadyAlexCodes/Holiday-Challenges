@@ -244,7 +244,11 @@ input[type="button"] {
   border: 1px solid #bbb;
   cursor: pointer;
   box-sizing: border-box; }
-.button:hover,
+.button:hover {
+  background-color: #FF3562;
+  border-color: #FF3562;
+  color: #fff;
+},
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
