@@ -13,10 +13,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js">
+    </script>
+    
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
 		function showHideDiv(ele) {
@@ -50,14 +52,13 @@
                         'Who was Microsofts original founder?',
                         'When did Google open?',
                         'When did the first podcast come out?'
-    ];
+        ];
 
         function openQuestion(number) {
          document.getElementById("questionNumber").style.height = "100%";
          document.getElementById("questionFont").innerHTML = question[number].toString();
-            console.log(question[number]);
-       
-        }
+         console.log(question[number]);
+       }
 
         function closeQuestion() {
         document.getElementById("questionNumber").style.height = "0%";
@@ -70,9 +71,9 @@
 
             if(correctAnswers.includes(answer)) {
                 closeQuestion();
-                alert("Correct answer!");
+                swal("Nice!", "That was the right answer!", "success");
             } else {
-                alert("Incorrect");
+                swal("Aw man!", "That was the wrong answer, feel free to try again :)", "error");
             }
         }
 
@@ -109,6 +110,18 @@
     <div class="paint-stroke"></div>
 </div>
 
+
+
+<div id="questionNumber" class="overlay">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeQuestion()">&times;</a>
+    <div class="overlay-content">
+        <p id="questionFont" style="color:#fff">
+        </p>
+        <input type="text" id="questionAnswer" placeholder="Answer Here!" style="align-items: center;">
+        <br>
+        <input class="button" type="submit" onclick="sumbitAnswer()"></input>
+    </div>                              
+</div>
 <section id="downArrow">
     <a href="#content"><span></span><span></span><span></span></a>
 </section>
@@ -123,18 +136,6 @@
         <p class="holidayFont" style="font-size: 50px;">Come back daily!</p>
             <p class="seperator">
     </div>
-
-    <div id="questionNumber" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeQuestion()">&times;</a>
-        <div class="overlay-content">
-            <p id="questionFont" style="color:#fff">
-            </p>
-            <input type="text" id="questionAnswer" placeholder="Answer Here!" style="align-items: center;">
-            <br>
-            <input class="button" type="submit" onclick="sumbitAnswer()"></input>
-        </div>                              
-    </div>
-
     <div class="container u-max-full-width">
         <div class="row">
             <div class="center column">

@@ -367,3 +367,7 @@ a:hover {
     transition: all 0.3s;
     width: 200px;
 }
+
+.swal-button {
+    padding: 0px 24px;
+}
