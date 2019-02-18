@@ -55,6 +55,13 @@ a:hover {
     color: #FF3562;
 }
 
+#questionFont {
+    font-size: 100px;
+    font-family: 'Mountains of Christmas', cursive;
+    text-align: center;
+    color: #FF3562;
+}
+
 
 /* Scrollbar */
 
@@ -303,8 +310,8 @@ a:hover {
 /* Overlay */
 
 .overlay {
-    height: 100%;
-    width: 0;
+    height: 0;
+    width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -343,7 +350,7 @@ a:hover {
     right: 45px;
     font-size: 60px;
   }
-  input {
+  .inputBox {
     padding: 20px 0 0px;
     text-align: center;
     background-color: transparent;

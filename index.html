@@ -38,18 +38,42 @@
                 }
             });
         });
-        function openQuestion() {
-         document.getElementById("questionNumber").style.width = "100%";
+
+        /* Finding Question */
+        var question = ['Who created the internet',
+                        'Write the line ‘Hello World’ in java.',
+                        'What is dark midnight blue in hexadecimal.',
+                        'What type of compression does a PDF use?',
+                        'When was language Java released?',
+                        'Who was Microsofts original founder?',
+                        'When did Google open?',
+                        'When did the first podcast come out?'
+    ];
+
+        function openQuestion(number) {
+         document.getElementById("questionNumber").style.height = "100%";
+         document.getElementById("questionFont").innerHTML = question[number].toString();
+            console.log(question[number]);
+       
         }
 
         function closeQuestion() {
-        document.getElementById("questionNumber").style.width = "0%";
+        document.getElementById("questionNumber").style.height = "0%";
         }
 
-        function numberQuestion(){
-            let question = ['Who created the internet', 'Print the line ‘Hello World’ in java.']
+        function sumbitAnswer() {
+            let answer = document.getElementById('questionAnswer').value.toLowerCase();
+            var correctAnswers = ['vint cerf', 'robert e. kahn', 'print.ln(hello world)', 'print.ln(hello world);',
+        '#0043366', '003366', 'lossless', '1995', 'bill gates', 'september 4, 1998', '9/4/1988', '2004'];
 
+            if(correctAnswers.includes(answer)) {
+                closeQuestion();
+                alert("Correct answer!");
+            } else {
+                alert("Incorrect");
+            }
         }
+
     </script>
 
 </head>
@@ -101,8 +125,11 @@
     <div id="questionNumber" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeQuestion()">&times;</a>
         <div class="overlay-content">
-            <p class="holidayFont" style="color:#fff">Question Here.</p>
+            <p id="questionFont" style="color:#fff">
+            </p>
             <input type="text" id="questionAnswer" placeholder="Answer Here!" style="align-items: center;">
+            <br>
+            <input class="button" type="submit" onclick="sumbitAnswer()"></input>
         </div>                              
     </div>
 
@@ -112,7 +139,7 @@
                     <div style="text-align:center;">
 
                             <span class="dot_completed">
-                                <a href="#day1" onclick="openQuestion()">
+                                <a href="#day1" onclick="openQuestion(0);">
                                     <p class="dotnumber">
                                     1
                                     </p>
@@ -121,14 +148,14 @@
                             <br>
                             <br>
                             <span class="dot_completed">
-                                <a href="#day2">
+                                <a href="#day2" onclick="openQuestion(1);">
                                     <p class="dotnumber">
                                     2
                                     </p>
                                 </a>
                             </span>
                             <span class="dot_completed">
-                                <a href="#day3">
+                                <a href="#day3" onclick="openQuestion(2);">
                                     <p class="dotnumber">
                                     3
                                     </p>
@@ -137,21 +164,21 @@
                             <br>
                             <br>
                             <span class="dot_completed">
-                                <a href="#day4">
+                                <a href="#day4" onclick="openQuestion(3);">
                                     <p class="dotnumber">
                                     4
                                     </p>
                                 </a>
                             </span>
                             <span class="dot_completed">
-                                <a href="#day5">
+                                <a href="#day5" onclick="openQuestion(4);">
                                     <p class="dotnumber">
                                     5
                                     </p>
                                 </a>
                             </span>
                             <span class="dot_completed">
-                                <a href="#day6">
+                                <a href="#day6" onclick="openQuestion(5);">
                                     <p class="dotnumber">
                                     6
                                     </p>
@@ -160,28 +187,28 @@
                             <br>
                             <br>
                             <span class="dot_completed">
-                                <a href="#day7">
+                                <a href="#day7"  onclick="openQuestion(6);">
                                     <p class="dotnumber">
                                     7
                                     </p>
                                 </a>
                             </span>
                             <span class="dot_completed">
-                                <a href="#day8">
+                                <a href="#day8"  onclick="openQuestion(7);">
                                     <p class="dotnumber">
                                     8
                                     </p>
                                 </a>
                             </span>
                             <span class="dot_completed">
-                                <a href="#day9">
+                                <a href="#day9"  onclick="openQuestion(8);">
                                     <p class="dotnumber">
                                     9
                                     </p>
                                 </a>
                             </span>
                             <span class="dot_completed">
-                                <a href="#day10">
+                                <a href="#day10"  onclick="openQuestion(9);">
                                     <p class="dotnumber">
                                     10
                                     </p>
@@ -190,7 +217,7 @@
                             <br>
                             <br>
                             <span class="dot_completed">
-                                <a href="#day11">
+                                <a href="#day11"  onclick="openQuestion(10);">
                                     <p class="dotnumber">
                                     11
                                     </p>
