@@ -43,39 +43,44 @@
             });
         });
 
-        /* Finding Question */
-        var question = ['Who created the internet',
-                        'Write the line ‘Hello World’ in java.',
-                        'What is dark midnight blue in hexadecimal.',
-                        'What type of compression does a PDF use?',
-                        'When was language Java released?',
-                        'Who was Microsofts original founder?',
-                        'When did Google open?',
-                        'When did the first podcast come out?'
-        ];
+        /* Questions */
+            /* Create each question with in this arraylist */
+            var question = ['Who created the internet',
+                            'Write the line ‘Hello World’ in java.',
+                            'What is dark midnight blue in hexadecimal.',
+                            'What type of compression does a PDF use?',
+                            'When was language Java released?',
+                            'Who was Microsofts original founder?',
+                            'When did Google open?',
+                            'When did the first podcast come out?',
+                            'What is the most popular color?',
+                            'What browser starts with a C?'
+            ];
 
-        function openQuestion(number) {
-         document.getElementById("questionNumber").style.height = "100%";
-         document.getElementById("questionFont").innerHTML = question[number].toString();
-         console.log(question[number]);
-       }
-
-        function closeQuestion() {
-        document.getElementById("questionNumber").style.height = "0%";
+            /* Open Question - Displays the question based on arraylist position */
+            function openQuestion(number) {
+            document.getElementById("questionNumber").style.height = "100%";
+            document.getElementById("questionFont").innerHTML = question[number].toString(); // This just searches for a specific line in the code
+            console.log(question[number]);
         }
-
-        function sumbitAnswer() {
-            let answer = document.getElementById('questionAnswer').value.toLowerCase();
-            var correctAnswers = ['vint cerf', 'robert e. kahn', 'print.ln(hello world)', 'print.ln(hello world);',
-        '#0043366', '003366', 'lossless', '1995', 'bill gates', 'september 4, 1998', '9/4/1988', '2004'];
-
-            if(correctAnswers.includes(answer)) {
-                closeQuestion();
-                swal("Nice!", "That was the right answer!", "success");
-            } else {
-                swal("Aw man!", "That was the wrong answer, feel free to try again :)", "error");
+            /* Close Question - Closes the overlay  */
+            function closeQuestion() {
+            document.getElementById("questionNumber").style.height = "0%";
             }
-        }
+
+            /* Submit Answer - Checks if answer inputed is equal to one of these answers */
+            function sumbitAnswer() {
+                let answer = document.getElementById('questionAnswer').value.toLowerCase();
+                var correctAnswers = ['vint cerf', 'robert e. kahn', 'print.ln(hello world)', 'print.ln(hello world);',
+            '#0043366', '003366', 'lossless', '1995', 'bill gates', 'september 4, 1998', '9/4/1988', '2004', 'blue' , 'chrome'];
+
+                if(correctAnswers.includes(answer)) {
+                    closeQuestion();
+                    swal("Nice!", "That was the right answer!", "success");
+                } else {
+                    swal("Aw man!", "That was the wrong answer, feel free to try again :)", "error");
+                }
+            }
 
     </script>
 
@@ -482,21 +487,20 @@
                         <br>
                         <div class="container">
                                 <div class="row">
-                                  <div class="one-half column value">
+                                  <div class="center column value">
                                     <h2 class="value-multiplier">The Javascript</h2>
                                     <p class="value-description">
-                                        <div class="codeBlock">
-                                                BEING REDONE
-                                        </div>
+                                            The javascript for this project was very simple.
+                                            Each question is stored in the form of an arraylist, and
+                                            each question clicked has a specific numerical variable that searches 
+                                            for the specificed arraylist position. The function
+                                             <b style="color: #495867; font-size: 15px; font-weight: bold; text-transform: none;">openQuestion(number);</b>
+                                            toggles the overlay as well as specifies the question. 
+                                            Inside the overlay there is a function that checks if the answer
+                                            is equal to one of the preset answers.
                                         </p>
-                                    </div>
-                                  <div class="one-half column value">
-                                    <h2 class="value-multiplier">The Building Process</h2>
-                                    <p class="value-description">          
-                                        BEING REDONE
-                                    </p>
-                                  </div>
-                                </div>
+                                    </div>                   
+                            </div>
                     </div>
     </div>
 
@@ -506,6 +510,21 @@
 
 <extraSmallText>
     <span class="github_button">
+        <a href="#" onclick="swal({
+            title: 'Warning',
+            text: 'You are about to be redirected to another page, but before continuing we wanted to make sure you were okay with this!',
+            icon: 'warning',
+        }).then(function(value) {
+                if(value) {
+                    window.location.href = 'https://shadyalexcodes.com/';
+                } else if(value == false) {
+
+                swal('Warning', 'You will not be redirected!', 'error');
+                }
+
+
+            });">
+
          <img src="https://avatars0.githubusercontent.com/u/45239432?s=460&v=4"> 
     </span>
 </extraSmallText>
